@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "vector_generator.c"
+#include "vector_insertion_sort.c"
+#include "vector_bubble_sort.c"
 #include "utils.c"
 #include "vector_selection_sort.c"
 
 #define MAX_VALOR 10000
-#define NUM_ELEMENTS 100000
+#define NUM_ELEMENTS 1000
 
 
 void show_menu(){
@@ -14,7 +16,7 @@ void show_menu(){
     printf("SELECIONE UMA OPÇÃO \n");
     printf("1 - Selection Sort \n");
     printf("2 - Insertion Sort \n");
-    printf("3 - BUSCA POR INTERPOLACAO \n");
+    printf("3 - Bubble Sort \n");
     printf("0 - SAIR \n");
     printf("------------------\n");
 
@@ -28,11 +30,11 @@ void run_search_choice(int search_option, int *vector)
     }
     else if (search_option == 2)
     {
-
+      show_vector_insertion_sort_case("Ordenação de um vetor aleatorio",vector, NUM_ELEMENTS);
     }
     else
     {
-
+      show_vector_bubble_sort_case("Ordenação de um vetor aleatorio",vector, NUM_ELEMENTS);
     }
 
 }
