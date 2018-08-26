@@ -5,7 +5,6 @@
 #include "vector_bubble_sort.c"
 #include "utils.c"
 #include "vector_selection_sort.c"
-
 #define MAX_VALOR 10000
 #define NUM_ELEMENTS 1000
 

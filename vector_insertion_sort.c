@@ -1,10 +1,11 @@
 #include <stdio.h>
+#define CLK_PER_SEC 100000
+
 
 //Função para mostrar o andamento da ordenação pela interação divida pelo numero de elementos
 void show_run_time_insertion(int state, int total){
   float percent= ((float)state / (float)total)*100;
   system("clear");
-  printf("Realizando Insertion Sort\n" );
   printf("Carregando em %.1f%% \n", percent);
 }
 

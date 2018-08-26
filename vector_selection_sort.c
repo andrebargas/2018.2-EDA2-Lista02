@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define CLK_PER_SEC 100000
 
 
 //Função para mostrar o andamento da ordenação pela interação divida pelo numero de elementos
